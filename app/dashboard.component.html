@@ -1,0 +1,19 @@
+<h3>Top Products</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let product of products" (click)="gotoDetail(product)" class="col-1-4">
+    <div class="module product">
+      <h4>{{product.name}}</h4>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="product">
+  <h2>{{product.name}} details!</h2>
+  <div>
+    <label>id: </label>{{product.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="product.name" placeholder="name" />
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
