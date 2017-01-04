@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base href="/">
-    <title>Angular QuickStart</title>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <title>Shop</title>
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <!-- <script src="../app.js"></script>-->
+    <script src="../config.js"></script>
+    <script src="../services/service.js"></script>
+    <script src="../controllers/homeController.js"></script>
+    <script src="../controllers/productsController.js"></script>
+    <script src="../controllers/shoppinglistController.js"></script>
+    <script src="../controllers/thankyouController.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+    <link rel="stylesheet" href="../css/app.css">
 
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+
+</head>
+<body ng-app="myShoppingCart">
+<div class="page-wrap">
+    <a class="ts-logo ts-logo--telia" href="#home"></a>
+
+    <ul class="nav">
+        <li class="navlink"><a href="#home">Home</a></li>
+        <li class="navlink"><a href="#products">Products</a></li>
+        <li class="navlink"><a href="#shoppinglist">Shopping Bag</a></li>
+    </ul>
+
+    <div ng-view class="main">
+        <!-- Här laddas mina sidor in -->
+    </div>
+</div>
+
+
+<footer class="site-footer">
+    <span class="icon-text">Follow us</span>
+    <ul class="ul-list">
+
+        <li class="img-list"><a href="http://www.facebook.com"><img src="../images/facebook.svg" alt=""
+                                                                    class="icon-img"/></a>
+        </li>
+
+        <li class="img-list"><a href="http://www.instagram.com"><img src="../images/insta1.svg" alt=""
+                                                                     class="icon-img"/></a></li>
+
+        <li class="img-list"><a href="http://www.twitter.com"><img src="../images/twitter.svg" alt=""
+                                                                   class="icon-img"/></a></li>
+    </ul>
+</footer>
+
+</body>
 </html>

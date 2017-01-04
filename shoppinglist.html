@@ -1,0 +1,32 @@
+<h1>Shopping Bag</h1>
+
+
+<div class="product-images" ng-repeat="product in selectedProducts track by $index">
+
+    <img ng-src="{{product.profile_picture}}">
+    <h5>{{product.products}} - <span class="">{{product.price}} kr</span></h5>
+
+    <button ng-click="decreaseQuantity(product)">-</button>
+
+    <button ng-click="increaseQuantity(product)">+</button>
+    <h5>{{product.quantity}}</h5>
+
+    <!--delete produkt-->
+    <button ng-click="deleteProduct(product)">Remove</button>
+    <h5>{{product.product}}</h5>
+
+
+</div>
+
+<!-- Trigger/Open The Modal -->
+<a class="btn" href="#thankyou">BUY</a>
+
+
+
+<!--skapar en clear knapp som ska tömma varukorg-->
+<p>
+    <button class="clearBtn" ng-click="clearBag()" id="clear" ng-disabled="selectedProducts.length==0">CLEAR BAG
+    </button>
+
+</p>
+

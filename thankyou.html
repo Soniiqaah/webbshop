@@ -1,0 +1,20 @@
+<h1> Thank you for shopping!</h1>
+
+
+<ul class="thank-you-list">
+    <li class="thank-you-list-item" ng-repeat="product in selectedProducts">
+
+        <h5>{{product.products}} - <span class="">{{product.price}} SEK </span> quantity: {{product.quantity}}
+            <p>Sum: {{product.totalPrice}} SEK</p></h5>
+
+
+    </li>
+</ul>
+
+<div class="totSum">Total Sum: {{selectedProducts.totalSum}} SEK</div>
+
+
+<p class="welcome">Welcome Back!</p>
+
+
+<a class="goBack" href="#home">Go to homepage</a>

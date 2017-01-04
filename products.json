@@ -1,0 +1,62 @@
+[
+  {
+    "product": "Apple iphone 7",
+    "id": 1,
+    "url": "../images/iphone7.png",
+    "price": 7995
+  },
+  {
+    "product": "Samsung Galaxy A3 ",
+    "id": 2,
+    "url": "../images/samsunggalaxyA3.png",
+    "price": 3995
+  },
+  {
+    "product": "Samsung Galaxy S7",
+    "id": 3,
+    "url": "../images/samsungs7.png",
+    "price": 5995
+  },
+  {
+    "product": " Huawei Mate 9 Pro",
+    "id": 4,
+    "url": "../images/huaweiMate.png",
+    "price": 4995
+  },
+  {
+    "product": "Huawei P9",
+    "id": 5,
+    "url": "../images/huaweiP9.png",
+    "price": 7995
+  },
+  {
+    "product": " Huawei Honor 8",
+    "id": 6,
+    "url": "../images/honor8.png",
+    "price": 7995
+  },
+  {
+    "product": "Samsung Galaxy s6",
+    "id": 7,
+    "url": "../images/samsungs6.png",
+    "price": 7995
+  },
+  {
+    "product": "Sony Xperia X",
+    "id": 8,
+    "url": "../images/xperiaX.png",
+    "price": 7995
+  },
+  {
+    "product": "Apple iphone SE",
+    "id": 9,
+    "url": "../images/iphoneSE.png",
+    "price": 3995
+  },
+  {
+    "product": "Samsung Galaxy J5 2016",
+    "id": 10,
+    "url": "../images/samsungJ5.png",
+    "price": 1995
+  }
+]
